@@ -18,7 +18,7 @@ def pickDir(ext):
                 return folder
 
 
-file_path = "C:/Users/manuel/Downloads"
+# file_path = "C:/Users/manuel/Downloads"
 
 # function that scans all files, check extension and move it to respective folder
 def organizeDir():
@@ -51,4 +51,12 @@ def organizeDir():
         newFilePath = directoryPath / filePath.name
         filePath.rename(newFilePath)
 
-organizeDir()
+def start_organizing():
+    file_path = input("Enter the path of the folder you want to organize: ")
+    for item in os.scandir(file_path):
+        if item.is_dir():
+            continue
+        organize_file(item.path)
+
+if __name__ == "__main__":
+    start_organizing()
