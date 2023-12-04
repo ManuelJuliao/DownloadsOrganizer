@@ -16,7 +16,7 @@ def pickDir(ext):
                 return folder
 
 
-file_path = 'D:\Downloads'
+file_path = 'C:\Downloads'
 
 # function that scans all files, check extension and move it to respective folder
 def organizeDir():
