@@ -1,2 +1,3 @@
 # DownloadsOrganizer
-Automatically organize downloads folder by type of file
+Automatically organize folder by type of file
+
